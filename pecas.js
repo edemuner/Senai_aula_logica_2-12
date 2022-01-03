@@ -1,7 +1,7 @@
 var listaDePecas = ["Filtro de Ar", "Motor", "Amortecedor"]
 
-if (listaDePecas.length < 2){
-    console.log("Outras peças podem ser adicionadas")
+if (listaDePecas.length <= 10){
+    console.log("A lista está no tamanho adequado!")
 }
 else {
     console.log("Não tem mais espaço na lista")
@@ -24,7 +24,7 @@ if (nomePeca.length > 3){
 else{
     console.log("O nome deve ter mais de 3 caracteres, digite um nome adequado")
 }
-
+// solução alternativa com switch
 switch (nomePeca.length){
     case 0:
         console.log("O nome da peça não pode ser vazio")
